@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+@media (min-width:320px) {
+    
+
+body{
+    margin: 0;
+    background-image: url(IMAGENES/fondonos.png);
+    background-size: cover;
+    
+}
+/* TOTAL DEL GRID PARA ARMAR TODO */
+.GRIDO{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows:  auto auto auto ;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+}
+
+/* imagen de header */
+.HERO_IMG{
+    align-items: center;
+    border-top: 1px solid #e1aa43;
+    border-left: 1px solid #e1aa43;
+    border-right: 1px solid #e1aa43;
+
+    
+    
+}
+.HERO_IMG img{
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 60%;
+    padding-top: 0.5rem;
+}
+
+/* HEADER */
+
+.header{ 
+    text-align: center; 
+    grid-area: header;
+    grid-template-columns: repeat(2, 1fr);    
+    align-items: center;
+}
+/* titulo */
+.TITULO_HEADER{
+    font-weight: bold;
+    font-size: 150%;
+    border-left: 1px solid #e1aa43;
+    border-right: 1px solid #e1aa43;
+    border-bottom: 0.5px solid #e1aa43;
+    color: aliceblue;
+    padding: 0.1rem 0;
+    
+    
+}
+/* COLOR DE LA NAVBAR SIN DECORACION */
+.NAV a{ 
+    text-decoration: none;
+    color: white;     
+}
+/* NAV SIN ESTILO */
+.NAV{
+    width: 100%;
+    list-style-type: none;
+    border-bottom:1px solid #e1aa43;
+}
+/* LINKEOS DE NAV */
+
+.NAVLINK{   
+    font-weight: bold;
+    font-size: 140%;
+    padding: 0.5rem;
+    height: 3rem;
+    align-content: center;
+    border: 1px solid #e1aa43;
+    }
+
+/* MAIN */
+main{  
+    padding: 0.5rem 2REM;
+    color: rgb(241, 221, 66);
+    text-align: center; 
+    grid-area: main;
+    }
+/* MAIN TEXTO */
+main h1{
+    padding:0 0 0.5rem 0 ;}
+
+main p{
+    font-weight: 800;
+    padding:0 0 1rem 0 ;}
+
+
+
+.TITULO_SERVICIO{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border: 2px dashed #e1aa43;
+}
+.TIPOS_VIAJE{
+    margin-top: 1REM;
+}
+.TIPOS_VIAJE img{
+    width: 100%;
+    border:3px solid #ffffff;
+    border-radius: 2rem;
+    text-align: center;
+
+}
+.TIPOS_VIAJE fieldset{
+    border-radius: 2rem;
+    border: 3px solid white;
+}
+
+.TITULOFAQ{
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: larger;
+    color: white;
+}
+.TITULOFAQ1{
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: larger;
+    color: rgb(241, 221, 66);
+}
+.Q1{
+    color: white;
+}
+.Q2{
+    color: white;
+}
+.Q3{
+    color: white;
+}
+.Q4{
+    color: white;
+}
+
+.MAIN_FORM{
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+
+    
+}
+
+.CONTACTO{
+    border:2px dashed #e1aa43;
+    width: 100%;
+    text-align: center;
+}
+.tituloform{
+    text-align: center;
+    margin-left: 7rem;
+}
+
+
+/* MAIN IMAGEN */ 
+
+hr{
+    color: #e1aa43;
+
+}   
+.img_descarga{
+    padding: 2rem 2rem;
+}
+.img_descarga img{
+    width: 100%;
+    text-align: center;
+    border: 2px dashed white; 
+    margin-bottom: 0.5rem;
+    border-radius: 50rem;
+    padding: 1.5rem 0;}
+
+.MAIN_NOSOTROS img{
+    margin: 1rem 0rem;
+    width: 15rem;
+    border:2px double #e1aa43 ;   
+}
+.APP_IMG{
+    padding-top: 0.5rem;
+}
+
+ /* BOTON DE DESCARGA */    
+
+.BTN_DESCARGA{  
+   font-weight: 800;
+   color: black;
+   background: NONE;
+   border: none;
+   outline-style: none;
+   background-color: #e1aa43;
+   border-radius: 20px;
+   padding: 0.5rem 2rem;}
+
+/* VIDEO DE YOUTUBE */   
+
+.videoyt{
+    margin-top : 2rem;
+    text-align: center;
+    border: 2px dashed #e1aa43 ;
+    
+}
+
+/* FOOTER */
+
+.footer{
+    color: white;
+    text-align: center; 
+    background-color: #9c7937;
+    grid-area: footer;
+}
+/* ICONOS FOOTER */
+.ICONETES{
+    width: 100%;
+}
+.ICONETES img{
+    text-align: center;
+    width: 20%;
+    vertical-align: middle;
+    padding: 1px 18px;
+    margin: 0.5rem 0;}
+
+ /* DERECHOS FRASE */  
+
+.DERECHOS{
+    
+    padding: 0.5rem 0;
+    font-weight: 100;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;}
+
+}
+
+@media (min-width:768px) {
+
+body{
+    margin: 0;
+    background-image: url(IMAGENES/fondonos.png);
+    background-size: center;
+    grid-template-columns: 1fr; 
+    grid-template-rows:1fr 1fr 1fr ;   
+    align-items: center;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"; }   
+
+.header{ 
+    top: 0;
+    position: sticky;
+    padding: 1rem 1rem;
+    color: white;
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.img_descarga{
+    padding: 2rem 2rem;
+}
+.img_descarga img{
+    width: 50%;
+    text-align: center;
+    border: 2px dashed white; 
+    margin-bottom: 0.5rem;
+    border-radius: 50rem;
+    padding: 2rem 0;}
+
+
+.HERO_IMG img{
+    text-align: left;
+    width: 100%;
+}
+.TITULO_HEADER{
+    padding-right: 1rem;
+    border: none;
+}
+.HERO_IMG{
+    border: none;
+}
+
+.NAV li{
+    border: none;
+}
+
+.NAV{
+    
+    width: 100%;
+    list-style-type: none;
+    display: inline-flex;
+    border: none;
+
+} 
+.NAVLINK{
+    padding-right: 1REM;
+}  
+
+.videoyt{
+    margin: 2rem 12rem;
+}
+
+.footer{
+    grid-area: footer;
+    width: 100%;
+    
+}
+
+.footer img{
+    width: 10%;
+}
+.MAIN_SERVICIO{
+    vertical-align: middle;
+    padding: 0.5REM 5REM;
+}
+.MAIN{
+    grid-area: main;
+}
+.MAIN_FORM{
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 5rem 5rem;
+    
+}
+.CONTACTO{
+    border:2px dashed #e1aa43;
+    width: 100%;
+    text-align: center;
+}
+.tituloform{
+    text-align: center;
+    margin-left: 15rem;
+    font-weight: 900;
+    font-size: xx-large;
+}
+.TODOELFAQ{
+    padding: 2REM 5REM;
+}
+}
+
+@media (min-width:1200px) {
+
+
+.header{ 
+    top: 0;
+    position: sticky;
+    color: white;
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    padding: 0 2rem 0 0;
+    margin: 0;
+}
+
+.HERO_IMG img{
+    padding-top: 0;
+    width: 40%;
+    
+}
+    
+.TITULO_HEADER{
+    font-weight: 400;
+    font-size: larger
+    ;
+    padding-right: 30rem;   
+}
+
+.NAVLINK{
+    font-weight: 400;
+    font-size: large;
+}
+
+
+.main h1{
+    font-size: 5rem;
+    padding: 1rem 2rem;
+    font-weight: 900;
+}
+.main p{
+    font-size: 2rem;
+    padding: 1rem 2rem 2rem 2rem;
+    font-weight: 600;
+
+}
+.main img{
+    width: 35%;
+    padding: 3rem 0;
+    border-radius: 20rem;
+}
+.BTN_DESCARGA{
+    padding:3REM 2REM,;
+    width: 30REM;
+}
+.BOTONASO{
+    padding-top: 1REM;
+    padding-bottom: 1REM;
+}
+.videoyt iframe{
+    width: 25rem;
+    height: 15rem;
+}
+
+.videoyt{
+    padding-top: 1rem;
+    margin: 1REM 20REM;
+    border-width: 2px;
+}
+.footer{
+    grid-area: footer;
+    width: 100%;
+    
+}
+
+.footer img{
+    width: 6%;
+    }
+
+.MAIN_NOSOTROS{
+    padding: 0 12REM;
+}
+
+.MAIN_NOSOTROS img{
+    width: 30rem;
+}
+.MAIN_NOSOTROS p{
+    font-size: 1.5rem;
+}
+.MAIN_SERVICIO{
+    padding: 1REM 14REM;
+}
+.TITULO_SERVICIO p{
+    font-size: 2rem;
+}
+.TIPOS_VIAJE{
+    padding: 0.5REM 0;
+}
+.TIPOS_VIAJE p{
+    font-weight: 900;
+    padding: 1rem 5Rem;
+
+}
+.TIPOS_VIAJE fieldset{
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 0 3rem;
+}
+.TODOELFAQ{
+    font-size: 1.5REM;
+    padding: 1REM 10REM;
+}
+.MAIN_FORM{
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 4rem 20rem;
+    
+}
+.CONTACTO{
+    border:3px dashed #e1aa43;
+    width: 100%;
+    text-align: center;
+}
+.tituloform{
+    
+    text-align: center;
+    margin-left: 12.5rem;
+    font-weight: 900;
+    font-size: xx-large;
+    padding-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}

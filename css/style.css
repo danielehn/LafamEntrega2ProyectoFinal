@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+        padding: 0;
+            box-sizing: border-box;}
+
+body{
+    font-family: 'Heebo', sans-serif;
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+
+}
+/* BARRA DE NAVEGACION */
+
+header{
+    grid-area: header;
+    background-color: black;
+    }  
+
+ul li{
+    list-style-type: none;
+    color: white;}
+
+.nav_logo{  
+    height: 8%;
+    width: 8%;
+}
+.nav_item{
+    list-style: none;
+}
+
+.nav_link{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+/* MAIN */
+
+main{
+    grid-area: main;
+    background-color: blueviolet;
+}
+
+
+/* FOOTER */
+footer{
+    grid-area: footer;
+    background-color: aqua;
+}
